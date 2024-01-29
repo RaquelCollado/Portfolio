@@ -1,16 +1,19 @@
 .landing {
   height: 80vh;
-  background-image: url("../../images/globo.png");
-  background-size: cover;
-  background-position: center;
+  background-image: url("https://thumbs.dreamstime.com/z/red-social-global-concepto-de-conexi%C3%B3n-datos-y-redes-internet-tecnolog%C3%ADa-en-todo-el-mundo-ondas-din%C3%A1micas-olas-conectadas-por-169200452.jpg?ct=jpeg");
+  opacity: 0.6;
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   &_bio {
     padding: 1rem;
+    border-bottom: rgb(204, 197, 197) solid 0.5px;
     &_title {
-      color: red;
+      font-size: 16px;
+      font-weight: 700;
+      color: purple;
     }
     &_photo {
       width: 50px;
@@ -20,15 +23,25 @@
     }
   }
   &_project {
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     &_card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: palevioletred 0.5px dotted;
+    
       &_image {
+        width: 20px;
       }
       &_names {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgb(238, 146, 7);
       }
       &_description {
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
       }
     }
   }

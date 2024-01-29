@@ -12,34 +12,34 @@ function Landing() {
 
 
           <article className='landing_project_card'>
-            <img className='landing_ project_card_image' src="" alt="" />
-            <h2 className='landing_ project_card_names'>Proyecto #1
+            <img className='landing_project_card_image' src="" alt="" />
+            <h2 className='landing_project_card_names'>Proyecto #1
             </h2>
-            <p className='landing_ project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
+            <p className='landing_project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
           </article>
 
 
           <article className='landing_project_card'>
-            <img className='landing_ project_card_image' src="" alt="" />
-            <h2 className='landing_ project_card_names'>Proyecto #2
+            <img className='landing_project_card_image' src="" alt="" />
+            <h2 className='landing_project_card_names'>Proyecto #2
             </h2>
-            <p className='landing_ project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
+            <p className='landing_project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
           </article>
 
 
           <article className='landing_project_card'>
-            <img className='landing_ project_card_image' src="" alt="" />
-            <h2 className='landing_ project_card_names'>Proyecto #3
+            <img className='landing_project_card_image' src="" alt="" />
+            <h2 className='landing_project_card_names'>Proyecto #3
             </h2>
-            <p className='landing_ project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
+            <p className='landing_project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
           </article>
 
 
           <article className='landing_project_card'>
-            <img className='landing_ project_card_image' src="" alt="" />
-            <h2 className='landing_ project_card_names'>Proyecto #4
+            <img className='landing_project_card_image' src="" alt="" />
+            <h2 className='landing_project_card_names'>Proyecto #4
             </h2>
-            <p className='landing_ project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
+            <p className='landing_project_card_description'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos tempore quam saepe sit nulla velit voluptates illum! Quaerat repudiandae accusantium eos earum aliquam corrupti voluptatibus modi mollitia, assumenda, doloremque iure!</p>
           </article>
         </section>
       
