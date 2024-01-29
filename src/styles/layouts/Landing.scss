@@ -1,33 +1,35 @@
 .landing {
-    height: 70vh;
-    background-color: whitesmoke;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    &_bio{
-        background-color: bisque;
-        &_title{
-            color: red;
-            text-align: center;
-        }
-        &_photo{
-            width: 50px;
-        }
-        &_desc{
-            color: green;
-        }
+  height: 80vh;
+  background-image: url("../../images/globo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  &_bio {
+    padding: 1rem;
+    &_title {
+      color: red;
     }
-    &_project{
-        &_card{
-            &_image{
-              
-            }
-            &_names{
-
-            }
-            &_description{
-
-            }
-        }
+    &_photo {
+      width: 50px;
+    }
+    &_desc {
+      color: green;
     }
   }
+  &_project {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &_card {
+      &_image {
+      }
+      &_names {
+      }
+      &_description {
+      }
+    }
+  }
+}

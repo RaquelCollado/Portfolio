@@ -1,7 +1,10 @@
 .header {
-  height: 15vh;
-    background-color: #06cce7;
-    &_title{
-      color: black;
-    }
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  &_title{
+    color: rgb(51, 50, 50);
   }
+}
