@@ -1,0 +1,33 @@
+.landing {
+    height: 70vh;
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &_bio{
+        background-color: bisque;
+        &_title{
+            color: red;
+            text-align: center;
+        }
+        &_photo{
+            width: 50px;
+        }
+        &_desc{
+            color: green;
+        }
+    }
+    &_project{
+        &_card{
+            &_image{
+              
+            }
+            &_names{
+
+            }
+            &_description{
+
+            }
+        }
+    }
+  }
