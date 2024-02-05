@@ -1,10 +1,13 @@
 .header {
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
   &_title{
-    color: rgb(51, 50, 50);
+    color: black;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
   }
 }
