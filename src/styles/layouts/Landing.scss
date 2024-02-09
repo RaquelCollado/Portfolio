@@ -1,11 +1,15 @@
 .landing {
   height: 86vh;
-  background-image: url("https://thumbs.dreamstime.com/z/red-social-global-concepto-de-conexi%C3%B3n-datos-y-redes-internet-tecnolog%C3%ADa-en-todo-el-mundo-ondas-din%C3%A1micas-olas-conectadas-por-169200452.jpg?ct=jpeg");
+  background-image: url("/map.jpeg" );
+  background-size: cover;
+  color: rgb(0, 0, 0);  
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5); 
+  
   &_bio {
     padding: 1rem;
     border-bottom: rgb(204, 197, 197) solid 0.5px;
