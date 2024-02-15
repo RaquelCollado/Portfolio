@@ -1,13 +1,84 @@
-.header {
+.header { 
   height: 7vh;
+  font-family: "Tenor Sans", sans-serif;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  &_title{
-    color: black;
-    font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+  justify-content: space-between;
+  padding: 2rem;
+
+  &_img {
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
+      1px 1px 3px 2px rgb(92, 162, 235);
+      
   }
+  
+  &_menu {
+    display: none;
+    @media all and (max-width: 730px) {
+      display: block;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      color:rgb(165, 175, 191);
+      background-color: black;
+      border-radius: 50%;
+
+    }
+  }
+  &_nav {
+ 
+    @media all and (max-width: 730px){ 
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color:  rgba(2,1,43,1) ;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
+    
+  }
+    &_bubble {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem;
+      
+
+      @media all and (max-width: 730px){
+        display: none;
+        flex-direction: column;
+        align-items: end;
+      }
+      &_li {
+        list-style: none;
+        display: flex;
+        color: rgb(110, 161, 232);
+      }
+      &_li a {
+        text-decoration: none;
+        color: rgb(110, 161, 232);
+      }
+      :hover {
+        color: black;
+        font-weight: 700;
+        background: rgb(110, 161, 232);
+        box-shadow: 1px 1px 3px 0 rgb(102, 215, 221),
+          4px 4px 16px 2px rgb(92, 162, 235);
+      }
+    }
+  }
+}
+.visible{
+  opacity: 1;
+  visibility: visible;
 }

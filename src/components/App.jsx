@@ -1,6 +1,5 @@
 import "../styles/App.scss";
 import Header from "./Header";
-import Footer from "./Footer";
 import { Route, Routes } from "react-router-dom";
 import Landing from "./Landing";
 
@@ -14,7 +13,6 @@ function App() {
             <>
               <Header />
               <Landing/>
-              <Footer/>
             </>
           }
         ></Route>
