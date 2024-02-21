@@ -1,8 +1,8 @@
 .projects {
-    
-
+    height: 100vh;
   &_card {
-    background-image: url(/globo.png);
+    background-image: url(../../images/globo.png);
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,12 +12,16 @@
     border: white solid 3px;
     border-radius: 20px;
     margin-block: 1rem;
+    @media all and (min-width: 768px){
+      margin: 3rem;
+    }
+    
 
     &_title {
       color: rgb(1, 1, 52);
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: "Tenor Sans", sans-serif;
       font-weight: bold;
+      font-size: 20px;
     }
     &_img {
       width: 50px;
@@ -25,8 +29,7 @@
     }
     &_text {
       color: rgb(1, 1, 52);
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+      font-family: "Tenor Sans", sans-serif;
     }
   }
 }

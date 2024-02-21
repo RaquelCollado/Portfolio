@@ -4,11 +4,11 @@
 @import './layouts/Landing.scss';
 
 .container{
-    height: 100vh;
+    height: 100%;
     background: radial-gradient(circle, rgba(0,14,83,1) 28%, rgba(2,1,43,1) 100%);
     padding: 2rem;
 }
 .arrow{
     width: 50px;
-   
+    margin: 2rem;
 }

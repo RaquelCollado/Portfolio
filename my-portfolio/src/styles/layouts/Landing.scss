@@ -1,0 +1,77 @@
+.title {
+  text-align: center;
+  color: rgb(114, 194, 228);
+  text-shadow: rgb(113, 200, 230) 1px 0 10px;
+  margin: 2rem;
+  padding-top: 2.4rem;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  animation: jump 1.5s;
+  transform: translateY(0);
+}
+@keyframes jump {
+  0% {
+    transform: translateY(-200px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_about {
+    width: 80vw;
+    margin: 2rem;
+    color: lightblue;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    :hover {
+      font-size: 18px;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    &_link {
+      text-decoration: none;
+      background-image: linear-gradient(to right, #00050b, #020b35);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-family: "Tenor Sans", sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &_tools {
+      height: 8rem;
+      width: 8rem;
+
+      box-shadow: inset -10px -10px 25px 0 rgb(102, 215, 221),
+        1px 1px 3px 2px rgb(92, 162, 235);
+      border-radius: 50%;
+      padding-top: 3.5rem;
+      padding-left: 0.3rem;
+    }
+    &_projects {
+      height: 8rem;
+      width: 8rem;
+      padding-left: 1.4rem;
+      box-shadow: inset 10px 10px 25px 0 rgb(102, 215, 221),
+        1px 1px 3px 2px rgb(92, 162, 235);
+      border-radius: 50%;
+      padding-top: 3.5rem;
+    }
+  }
+}

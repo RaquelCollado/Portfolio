@@ -2,11 +2,9 @@ import "../styles/App.scss";
 import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Landing from "./Landing";
-import WhoAre from "./WhoAre";
-import Tools from "./Tools";
 import Projects from "./Projects";
 import Contact from "./Contact";
-
+import Tools from "./Tools";
 
 function App() {
   return (
@@ -21,30 +19,20 @@ function App() {
             </>
           }
         ></Route>
-        
-        <Route
-          path="/QuienSoy"
-          element={
-            <>
-              <WhoAre />
-            </>
-          }
-        ></Route>
-
-        <Route
-          path="/Herramientas"
-          element={
-            <>
-              <Tools />
-            </>
-          }
-        ></Route>
 
         <Route
           path="/Proyectos"
           element={
             <>
               <Projects />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/herramientas"
+          element={
+            <>
+              <Tools />
             </>
           }
         ></Route>

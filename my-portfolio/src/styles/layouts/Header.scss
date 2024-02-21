@@ -1,6 +1,8 @@
 .header { 
   height: 7vh;
   font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +13,6 @@
     border-radius: 50%;
     box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
       1px 1px 3px 2px rgb(92, 162, 235);
-      
   }
   
   &_menu {
@@ -21,10 +22,10 @@
       width: 40px;
       height: 40px;
       font-size: 18px;
-      color:rgb(165, 175, 191);
-      background-color: black;
+      font-weight: 400;
+      color:rgb(110, 161, 232);
+      background-color: rgb(0, 0, 0);
       border-radius: 50%;
-
     }
   }
   &_nav {
@@ -32,10 +33,10 @@
     @media all and (max-width: 730px){ 
     opacity: 0;
     visibility: hidden;
-
+    width: 40%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     gap: 1rem;
     position: absolute;
     top: 0;
@@ -43,6 +44,7 @@
     bottom: 0;
     padding: 2rem;
     background-color:  rgba(2,1,43,1) ;
+    border: solid 2px rgb(110, 161, 232);
     box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
     
   }
@@ -53,7 +55,6 @@
       gap: 1rem;
       padding: 2rem;
       
-
       @media all and (max-width: 730px){
         display: none;
         flex-direction: column;
@@ -62,11 +63,18 @@
       &_li {
         list-style: none;
         display: flex;
+        font-family: "Tenor Sans", sans-serif;
+       
         color: rgb(110, 161, 232);
       }
       &_li a {
         text-decoration: none;
-        color: rgb(110, 161, 232);
+        font-family: "Tenor Sans", sans-serif;
+        color: rgb(110, 161, 232); 
+        font-size: 12px;
+        @media all and (min-width: 730px) and (max-width:2000px){
+        font-size: calc(12px + 0.5vw);
+        }
       }
       :hover {
         color: black;
@@ -74,6 +82,7 @@
         background: rgb(110, 161, 232);
         box-shadow: 1px 1px 3px 0 rgb(102, 215, 221),
           4px 4px 16px 2px rgb(92, 162, 235);
+        
       }
     }
   }
@@ -81,4 +90,6 @@
 .visible{
   opacity: 1;
   visibility: visible;
+
+  
 }
