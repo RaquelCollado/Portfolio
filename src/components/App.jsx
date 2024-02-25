@@ -5,6 +5,7 @@ import Landing from "./Landing";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Tools from "./Tools";
+import Cv from "./Cv";
 
 function App() {
   return (
@@ -19,7 +20,22 @@ function App() {
             </>
           }
         ></Route>
-
+        <Route
+          path="/curriculum"
+          element={
+            <>
+              <Cv />
+            </>
+          }
+        ></Route>
+        <Route
+          path="/contacto"
+          element={
+            <>
+              <Contact />
+            </>
+          }
+        ></Route>
         <Route
           path="/proyectos"
           element={

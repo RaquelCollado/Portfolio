@@ -9,6 +9,9 @@ function Header() {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+  const closeMenu = () => {
+    setMenuVisible(false);
+  };
 
   return (
     <div className="header">
@@ -18,10 +21,10 @@ function Header() {
       <nav className={`header_nav ${menuVisible ? 'visible' : ''}`}>
         <button className="header_menu" onClick={toggleMenu}>x</button>
         <ul className="header_nav_bubble">
-          <li className="header_nav_bubble_li">
-            <Link to="/curriculum">CV</Link>
+          <li className="header_nav_bubble_li" onClick={closeMenu}>
+            <Link to="/curriculum">Curriculum</Link>
           </li>
-          <li className="header_nav_bubble_li">
+          <li className="header_nav_bubble_li" onClick={closeMenu}>
             <Link to="/contacto">Contacto</Link>
           </li>
         </ul>
