@@ -1,35 +1,35 @@
 .projects {
-    height: 100vh;
+  min-height: 100vh;
   &_card {
-    background-image: url(../../images/globo.png);
+    background-image: url(/src/images/fondo.png);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-block: 3rem;
     padding: 2rem;
-    gap:1rem;
-    border: white solid 3px;
-    border-radius: 20px;
+    gap: 1rem;
+    border-radius: 20%;
     margin-block: 1rem;
-    @media all and (min-width: 768px){
+    @media all and (min-width: 768px) {
       margin: 3rem;
     }
-    
 
     &_title {
-      color: rgb(1, 1, 52);
+      //color: rgb(1, 1, 52);
+      color: white;
       font-family: "Tenor Sans", sans-serif;
       font-weight: bold;
       font-size: 20px;
     }
     &_img {
       width: 50px;
-
+      border-radius: 5%;
     }
     &_text {
       color: rgb(1, 1, 52);
       font-family: "Tenor Sans", sans-serif;
+      font-weight: bold;
     }
   }
 }

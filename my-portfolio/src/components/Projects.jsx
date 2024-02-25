@@ -22,22 +22,27 @@ const proyectos = [
   }
 ];
 
+function renderProyectos() {
+  return proyectos.map((proyecto, index) => (
+    <article key={index} className="projects_card">
+      <h2 className="projects_card_title">{proyecto.title}</h2>
+      <img className="projects_card_img" src={globo} alt="" />
+      <p className="projects_card_text">{proyecto.text}</p>
+    </article>
+  ));
+}
+
 function Projects() {
   return (
     <>
-      <Link to="/">
+       <Link to="/">
         <img className="arrow" src={image} alt="flecha" />
       </Link>
     
       <div className="projects">
-        {proyectos.map((proyecto, index) => (
-          <article key={index} className="projects_card">
-            <h2 className="projects_card_title">{proyecto.title}</h2>
-            <img className="projects_card_img" src={globo} alt="" />
-            <p className="projects_card_text">{proyecto.text}</p>
-          </article>
-        ))}
+        {renderProyectos()}
       </div>
+     
     </>
   );
 }

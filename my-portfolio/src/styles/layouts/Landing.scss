@@ -31,9 +31,17 @@
     font-family: "Tenor Sans", sans-serif;
     font-weight: 400;
     text-align: center;
-    :hover {
-      font-size: 18px;
-    }
+    line-height: 1.5;
+  
+    &_text span{
+        text-transform: uppercase;
+        display: block;
+        
+      }:hover {
+          font-size: 18px;
+          
+        }
+    
   }
 
   &_list {
@@ -43,12 +51,11 @@
     justify-content: center;
     gap: 2.5rem;
     margin-top: 2rem;
+    
     &_link {
       text-decoration: none;
-      background-image: linear-gradient(to right, #00050b, #020b35);
-      -webkit-background-clip: text;
-      background-clip: text;
       color: transparent;
+      text-shadow: lightblue 1px 1px;
       font-family: "Tenor Sans", sans-serif;
       font-size: 14px;
       font-weight: bold;
@@ -57,13 +64,16 @@
     &_tools {
       height: 8rem;
       width: 8rem;
-
-      box-shadow: inset -10px -10px 25px 0 rgb(102, 215, 221),
-        1px 1px 3px 2px rgb(92, 162, 235);
+      box-shadow: inset -10px -10px 25px 0 rgb(102, 215, 221), 1px 1px 3px 2px rgb(92, 162, 235);
       border-radius: 50%;
       padding-top: 3.5rem;
       padding-left: 0.3rem;
+      transition: background-color 0.3s ease;
     }
+    &_tools:active {
+      background-color: lightblue; 
+    }
+    
     &_projects {
       height: 8rem;
       width: 8rem;
@@ -72,6 +82,10 @@
         1px 1px 3px 2px rgb(92, 162, 235);
       border-radius: 50%;
       padding-top: 3.5rem;
+      transition: background-color 0.3s ease;
+    }
+    &_projects:active {
+      background-color: lightblue;
     }
   }
 }

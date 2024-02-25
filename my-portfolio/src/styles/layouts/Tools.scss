@@ -1,9 +1,21 @@
 .tools {
-    
-    background-image: url(../../images/globo.png);
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
-    font-weight: 400;
-    text-align: center;
-
+  min-height: 100vh;
+  color: rgb(1, 40, 82);
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  &_text {
+    background-image: url(/src/images/fondo.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
+    padding: 1.5rem 1rem;
+  
+  }
+  &_text span{
+    color: rgb(78, 6, 172);
+    font-size: 20px;
+   
+  }
 }

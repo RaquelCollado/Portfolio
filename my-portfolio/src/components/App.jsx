@@ -21,7 +21,7 @@ function App() {
         ></Route>
 
         <Route
-          path="/Proyectos"
+          path="/proyectos"
           element={
             <>
               <Projects />
@@ -37,7 +37,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Contacto"
+          path="/contacto"
           element={
             <>
               <Contact />
