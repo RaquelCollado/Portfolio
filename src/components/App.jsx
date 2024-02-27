@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Tools from "./Tools";
 import Cv from "./Cv";
+import Form from "./Form";
 
 function App() {
   return (
@@ -37,6 +38,14 @@ function App() {
           }
         ></Route>
         <Route
+          path="/formulario"
+          element={
+            <>
+              <Form />
+            </>
+          }
+          ></Route>
+        <Route
           path="/proyectos"
           element={
             <>
@@ -52,14 +61,7 @@ function App() {
             </>
           }
         ></Route>
-        <Route
-          path="/contacto"
-          element={
-            <>
-              <Contact />
-            </>
-          }
-        ></Route>
+       
 
       </Routes>
     </div>

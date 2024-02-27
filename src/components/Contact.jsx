@@ -12,8 +12,8 @@ function Contact() {
         <Link to="/">
           <img className="arrow" src={image} alt="flecha" />
         </Link>
-      
-      <h2 className="red">Aquí podrás encontrarme...</h2>
+
+        <h2 className="red">Aquí podrás encontrarme...</h2>
       </div>
       <div className="contact">
         <ul className="contact_list">
@@ -54,6 +54,14 @@ function Contact() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="continue">
+        <p className="continue_text">
+          O si prefieres puedes contactar conmigo a traves del formulario
+        </p>
+        <Link to="/formulario">
+          <img className="continue_arrow" src={image} alt="flecha" />
+        </Link>
       </div>
     </>
   );

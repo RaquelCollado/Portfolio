@@ -1,0 +1,70 @@
+.contactForm {
+  min-height: 100vh;
+}
+.titleForm {
+  color: lightblue;
+  text-transform: uppercase;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  &_label {
+    color: lightblue;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+  &_input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: rgb(157, 157, 232) 2px dotted;
+    background-color: rgb(41, 41, 147);
+    box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
+      1px 1px 3px 2px rgb(92, 162, 235);
+    color: lightblue;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0.5rem;
+  }
+  &_inpuText {
+    width: 95%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    border: rgb(157, 157, 232) 2px dotted;
+    background-color: rgb(41, 41, 147);
+    box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
+      1px 1px 3px 2px rgb(92, 162, 235);
+    padding: 1rem;
+    color: lightblue;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &_inputSend {
+    width: 100px;
+    height: 50px;
+    border: rgb(157, 157, 232) 2px dotted;
+    background-color: rgb(41, 41, 147);
+    box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
+      1px 1px 3px 2px rgb(92, 162, 235);
+    border-radius: 10px;
+    color: lightblue;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

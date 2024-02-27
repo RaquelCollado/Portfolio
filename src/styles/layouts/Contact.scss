@@ -1,7 +1,7 @@
-.back{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .red {
   color: lightblue;
@@ -12,7 +12,7 @@
   text-align: center;
   animation: jump 1.5s;
   transform: translateY(0);
-  @media all and (min-width: 1024px){
+  @media all and (min-width: 1024px) {
     font-size: 20px;
   }
 }
@@ -23,7 +23,6 @@
   50% {
     transform: translateY(50px);
   }
-  
 }
 .contact {
   min-height: 100vh;
@@ -75,6 +74,34 @@
       @media all and (min-width: 1024px) {
         margin-left: 30rem;
       }
+    }
+  }
+}
+.continue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 1rem;
+  &_text {
+    color: lightblue;
+    text-transform: uppercase;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+  }
+  &_arrow {
+    width: 50px;
+    animation: jump 1.5s;
+    transform: rotate(180deg) translateX(0);
+  }
+  @keyframes jump {
+    0% {
+      transform: translateX(-500px);
+    }
+    50% {
+      transform: translateX(50px);
     }
   }
 }

@@ -6,12 +6,13 @@
 @import './layouts/Tools.scss';
 @import './layouts/Cv.scss';
 @import './layouts/Contact.scss';
+@import './layouts/Form.scss';
 .container{
     height: 100%;
     background: radial-gradient(circle, rgba(0,14,83,1) 28%, rgba(2,1,43,1) 100%);
     padding: 2rem;
 }
 .arrow{
-    width: 50px;
+    width: 35px;
     margin: 2rem;
 }
