@@ -15,7 +15,7 @@ function Cv() {
           <a
             href="CV_RaquelCollado.pdf"
             download="Cv Raquel Collado"
-            ><img src={cvitae} alt="Curriculum Vitae" />
+            ><img className="curriculum_image" src={cvitae} alt="Curriculum Vitae" />
           </a>
           <h3 className="curriculum_title">gracias por tu interés, ¡espero verte pronto!</h3>
       </div>

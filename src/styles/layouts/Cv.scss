@@ -1,37 +1,46 @@
 .curriculum {
-    min-height: 100vh;
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:2rem;
+  min-height: 100vh;
+  color: lightblue;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
 
-    &_title{
-        color: azure;
-        font-size: 20px;
-        animation: teclear 2s infinite alternate;
+  &_title {
+    color: azure;
+    font-size: 20px;
+    animation: teclear 2s infinite alternate;
+  }
+  @keyframes teclear {
+    from {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
     }
-    @keyframes teclear{
-        from{
-            clip-path: polygon(0 0 , 0 0,0 100%, 0% 100%);
-        }to{
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-    @keyframes efecto{
-        50%{
-            border-color: transparent;
-        }
+  }
+  @keyframes efecto {
+    50% {
+      border-color: transparent;
     }
-   
-    &_text{
-        color: blue;
-        font-size: 16px;
-    }
+  }
 
+  &_text {
+    color: blue;
+    font-size: 16px;
+  }
+  &_image {
+    width: 250px;
+    height: 350px;
+    margin-left: 0.5rem;
+    @media all and (min-width: 730px) {
+      width: auto;
+      height: auto;
+    }
+  }
 }
-
