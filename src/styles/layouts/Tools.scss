@@ -1,21 +1,132 @@
 .tools {
   min-height: 100vh;
-  color: rgb(1, 40, 82);
-  font-family: "Tenor Sans", sans-serif;
+
+  &_ul {
+    color: rgb(1, 40, 82);
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    @media all and (min-width: 730px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    
+      &_liOne {
+        background-image: url(/src/images/fondo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        padding: 1.5rem 1rem;
+        line-height: 1.2rem;
+        font-size: 18px;
+        @media all and (min-width: 730px) {
+          grid-column: span 2;
+        }
+        & span {
+          text-transform: uppercase;
+          color: rgb(78, 7, 244);
+        }
+      }
+      &_liTwo {
+        background-image: url(/src/images/fondo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+        padding: 1.5rem 1rem;
+        line-height: 1rem;
+        @media all and (min-width: 730px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: auto;
+          height: 240px;
+        }
+
+        & span {
+          text-transform: uppercase;
+          color: blueviolet;
+        }
+      }
+
+      &_liThree {
+        background-image: url(/src/images/fondo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+        padding: 1.5rem 1rem;
+        line-height: 1rem;
+        @media all and (min-width: 730px) {
+          width: auto;
+          height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        & span {
+          text-transform: uppercase;
+          color: blueviolet;
+        }
+      }
+      &_liFour {
+        background-image: url(/src/images/fondo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+        padding: 1.5rem 1rem;
+        line-height: 1rem;
+        @media all and (min-width: 730px) {
+          width: auto;
+          height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        & span {
+          text-transform: uppercase;
+          color: blueviolet;
+        }
+      }
+      &_liFive {
+        background-image: url(/src/images/fondo.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10%;
+        padding: 1.5rem 1rem;
+        line-height: 1rem;
+        @media all and (min-width: 730px) {
+          width: auto;
+          height: 240px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        & span {
+          text-transform: uppercase;
+          color: blueviolet;
+        }
+      
+    }
+  }
+}
+.liTitle {
+  text-transform: uppercase;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  &_text {
-    background-image: url(/src/images/fondo.png);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10%;
-    padding: 1.5rem 1rem;
-  
-  }
-  &_text span{
-    color: rgb(78, 6, 172);
-    font-size: 20px;
-   
-  }
+  background-color: blueviolet;
+  color: rgb(52, 3, 99);
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  border-radius: 20px;
 }
