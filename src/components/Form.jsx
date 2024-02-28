@@ -3,29 +3,25 @@ import { useState } from "react";
 import image from "../images/anterior.png";
 
 function Form() {
-  const [formData, setFormData] = useState({
-    nombre: "",
-    email: "",
-    mensaje: "",
-  });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setFormData({
-      nombre: "",
-      email: "",
-      mensaje: "",
-    });
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
   };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const mailtoLink = `mailto:rcolladoherrera@gmail.com?subject=Message from ${email}&body=${message}`;
+    window.location.href = mailtoLink;
+  };
+
 
   return (
     <div className="contactForm">
@@ -39,30 +35,19 @@ function Form() {
         ideas. ¡Espero poder colaborar contigo pronto!
       </h2>
       <form className="form" onSubmit={handleSubmit}>
-        <label className="form_label" htmlFor="nombre">
-          Nombre:
-        </label>
-        <input
-          className="form_input"
-          type="text"
-          id="nombre"
-          name="nombre"
-          value={formData.nombre}
-          onChange={handleChange}
-          required
-        />
-
         <label className="form_label" htmlFor="email">
           Email:
         </label>
         <input
           className="form_input"
           type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
+            id="email"
+            name="email"
+            value={email}
+            onChange={handleEmailChange}
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+            title="Por favor introduce un email válido."
         />
 
         <label className="form_label" htmlFor="mensaje">
@@ -70,13 +55,11 @@ function Form() {
         </label>
         <textarea
           className="form_inpuText"
-          id="mensaje"
-          name="mensaje"
-          value={formData.mensaje}
-          onChange={handleChange}
-          rows="4"
-          cols="50"
-          required
+          id="message"
+            name="message"
+            value={message}
+            onChange={handleMessageChange}
+            required
         ></textarea>
 
         <input className="form_inputSend" type="submit" value="Enviar" />
