@@ -27,6 +27,9 @@ function Header() {
           <li className="header_nav_bubble_li" onClick={closeMenu}>
             <Link to="/contacto">Contacto</Link>
           </li>
+          <li className="header_nav_bubble_li" onClick={closeMenu}>
+            <Link to="/formulario">Formulario</Link>
+          </li>
         </ul>
       </nav>
     </div>
