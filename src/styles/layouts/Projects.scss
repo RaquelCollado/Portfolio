@@ -4,8 +4,10 @@
     background-image: url(/src/images/fondo.png);
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-block: 3rem;
     padding: 2rem;
     gap: 1rem;
@@ -19,10 +21,10 @@
       color: white;
       font-family: "Tenor Sans", sans-serif;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 25px;
     }
     &_img {
-      width: 50px;
+      width: 80px;
       border-radius: 5%;
     }
     &_text {
