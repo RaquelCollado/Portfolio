@@ -4,9 +4,9 @@
   align-items: center;
 }
 .red {
-  color: lightblue;
+  color: $lightColor;
   text-transform: uppercase;
-  font-family: "Tenor Sans", sans-serif;
+  font-family: $textFont;
   font-weight: bold;
   font-size: 15px;
   text-align: center;
@@ -84,9 +84,9 @@
   margin-top: 4rem;
   gap: 1rem;
   &_text {
-    color: lightblue;
+    color: $lightColor;
     text-transform: uppercase;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: $textFont;
     font-weight: bold;
     font-size: 15px;
     text-align: center;

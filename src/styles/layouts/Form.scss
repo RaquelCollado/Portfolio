@@ -2,9 +2,9 @@
   min-height: 100vh;
 }
 .titleForm {
-  color: lightblue;
+  color: $lightColor;
   text-transform: uppercase;
-  font-family: "Tenor Sans", sans-serif;
+  font-family: $textFont;
   font-weight: bold;
   font-size: 16px;
   text-align: center;
@@ -18,8 +18,8 @@
   align-items: center;
 
   &_label {
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
+    color: $lightColor;
+    font-family: $textFont;
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 0.5rem;
@@ -33,8 +33,8 @@
     background-color: rgb(41, 41, 147);
     box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
       1px 1px 3px 2px rgb(92, 162, 235);
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
+    color: $lightColor;
+    font-family: $textFont;
     font-size: 16px;
     font-weight: 400;
     padding: 0.5rem;
@@ -49,8 +49,8 @@
     box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
       1px 1px 3px 2px rgb(92, 162, 235);
     padding: 1rem;
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
+    color: $lightColor;
+    font-family: $textFont;
     font-size: 16px;
     font-weight: 400;
   }
@@ -62,8 +62,8 @@
     box-shadow: inset 1px 1px 5px 0 rgb(102, 215, 221),
       1px 1px 3px 2px rgb(92, 162, 235);
     border-radius: 10px;
-    color: lightblue;
-    font-family: "Tenor Sans", sans-serif;
+    color: $lightColor;
+    font-family: $textFont;
     font-weight: 400;
     font-size: 18px;
   }

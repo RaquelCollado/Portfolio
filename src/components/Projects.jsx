@@ -6,7 +6,7 @@ const proyectos = [
   {
     title: "Vuelta al cole",
     text: "Este proyecto consiste en la maquetación de una página web utilizando HTML y CSS, con un enfoque en las propiedades Flexbox y Grid para crear un diseño flexible y responsive. La maquetación se realiza siguiendo un patrón proporcionado, lo que requiere organizar y estructurar los elementos de la página de acuerdo con las especificaciones dadas.",
-    link: "https://github.com/RaquelCollado/Web-Vuelta-al-cole",
+    link: "https://raquelcollado.github.io/Web-Vuelta-al-cole/",
     images: "https://www.moncloa.com/wp-content/uploads/2021/08/Mochilas-para-la-vuelta-al-cole.jpg",
   },
   {

@@ -1,4 +1,5 @@
 import "../styles/App.scss";
+
 import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Landing from "./Landing";
@@ -9,6 +10,7 @@ import Cv from "./Cv";
 import Form from "./Form";
 
 function App() {
+ 
   return (
     <div className='container'>
       <Routes>

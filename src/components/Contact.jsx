@@ -3,7 +3,7 @@ import image from "../images/anterior.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import email from "../images/email.png";
-import mobile from "../images/mobile1.png";
+import mobile from "../images/mobile.png";
 
 function Contact() {
   return (
