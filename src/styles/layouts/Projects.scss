@@ -1,8 +1,8 @@
 .projects {
   min-height: 100vh;
+  
   &_card {
-    background-image: url(/src/images/fondo.png);
-    background-size: cover;
+    background:  rgba(70, 130, 241, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,14 +11,18 @@
     padding-block: 3rem;
     padding: 2rem;
     gap: 1rem;
-    border-radius: 20%;
+    border: 0.5px solid rgba(115, 115, 244, 0.254);
+    border-radius: 5px;
     margin-block: 1rem;
+    
     @media all and (min-width: 768px) {
       margin: 3rem;
+      
     }
+    
 
     &_title {
-      color: white;
+      color: rgb(165, 194, 216);
       font-family: "Tenor Sans", sans-serif;
       font-weight: bold;
       font-size: 25px;
@@ -28,9 +32,16 @@
       border-radius: 5%;
     }
     &_text {
-      color: rgb(1, 1, 52);
+      color: rgb(84, 123, 181);
       font-family: "Tenor Sans", sans-serif;
       font-weight: bold;
     }
+    &:hover {
+      background:  rgb(9, 9, 62);
+      transform: scale(1.1);
+      border: 4px solid rgb(84, 123, 181);
+      
+    }
   }
 }
+
