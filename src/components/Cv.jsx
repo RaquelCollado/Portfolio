@@ -10,7 +10,6 @@ function Cv() {
           <img className="arrow" src={image} alt="flecha" />
         </Link>
         <div className="curriculum">
-          <h3 className="curriculum_title">¡Un truco!</h3>
           <p className="curriculum_text">Pincha en la imagen y descargarás mi curriculum</p>
           <a
             href="./CV_RaquelCollado.pdf"
