@@ -12,8 +12,8 @@ function Cv() {
         <div className="curriculum">
           <p className="curriculum_text">Pincha en la imagen y descargarás mi curriculum</p>
           <a
-            href="./CV_RaquelCollado.pdf"
-            download="CV_RaquelCollado"
+            href="../../CV_RaquelCollado.pdf"
+            download="CV_RaquelCollado.pdf"
             ><img className="curriculum_image" src={cvitae} alt="Curriculum Vitae" />
           </a>
           <h3 className="curriculum_title">gracias por tu interés, ¡espero verte pronto!</h3>
