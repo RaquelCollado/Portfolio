@@ -16,13 +16,6 @@ function Form() {
     setMessage(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const mailtoLink = `mailto:rcolladoherrera@gmail.com?subject=Message from ${email}&body=${message}`;
-    window.location.href = mailtoLink;
-  };
-
-
   return (
     <div className="contactForm">
       <Link to="/">
@@ -34,7 +27,7 @@ function Form() {
         contactarme para cualquier cosa que necesites o para compartir tus
         ideas. ¡Espero poder colaborar contigo pronto!
       </h2>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form"  action="https://formsubmit.co/rcolladoherrera@gmail.com" method="POST">
         <label className="form_label" htmlFor="email">
           Email:
         </label>
