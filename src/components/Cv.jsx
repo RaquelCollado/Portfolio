@@ -18,6 +18,7 @@ function Cv() {
           </a>
           <h3 className="curriculum_title">gracias por tu interés, ¡espero verte pronto!</h3>
       </div>
+      
     </>
   );
 }
